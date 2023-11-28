@@ -20,6 +20,11 @@ db = SQLAlchemy(app)
 
 
 
+
+
+
+
+
 # Define models
 roles_users = db.Table(
     'roles_users',
