@@ -15,6 +15,11 @@ app.config.from_pyfile('config.py')
 db = SQLAlchemy(app)
 
 
+
+
+
+
+
 # Define models
 roles_users = db.Table(
     'roles_users',
@@ -30,6 +35,12 @@ class Role(db.Model, RoleMixin):
 
     def __str__(self):
         return self.name
+
+
+
+
+
+
 
 
 class User(db.Model, UserMixin):
